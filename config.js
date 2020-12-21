@@ -6,8 +6,9 @@ var firebaseConfig = {
         projectId: "story-hub-9b1b9",
         storageBucket: "story-hub-9b1b9.appspot.com",
         messagingSenderId: "1053561204723",
-        appId: "1:1053561204723:web:7157fee55232870e0fec86"
-};
+        appId: "1:1053561204723:web:d9a1688aed1d626a0fec86"
+      };
+    
 // Initialize Firebase
 if (!firebase.apps.length) firebase.initializeApp(firebaseConfig);
 
