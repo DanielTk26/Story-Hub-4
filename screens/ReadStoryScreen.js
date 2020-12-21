@@ -18,14 +18,12 @@ export default class ReadStoryScreen extends React.Component {
 
   searchFilter = (text) => {
     const newData = this.state.allStories.filter((item) => {
-      //applying filter for the inserted text in search bar
+     
       const itemData = item.title ? item.title.toUpperCase() : "".toUpperCase();
       const textData = text.toUpperCase();
       return itemData.indexOf(textData) > -1;
     });
     this.setState({
-      //setting the filtered newData on datasource
-      //After setting the data it will automatically re-render the view
       dataSource: newData,
       search: text,
     });
@@ -60,10 +58,10 @@ export default class ReadStoryScreen extends React.Component {
     return (
       <View style={styles.container}>
         <Header
-          backgroundColor={"#f38181"}
+          backgroundColor={"white"}
           centerComponent={{
             text: "Story Hub",
-            style: { fontSize: 28, color: "#fff" },
+            style: { fontSize: 28, color: "black" },
           }}
         />
         <View style={styles.container}>
